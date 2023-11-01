@@ -52,7 +52,7 @@ body {
 }
 
 .card {
-  width: 375px;
+  max-width: 375px;
   height: 809px;
   background: var(--White, #fff);
 }
@@ -161,11 +161,12 @@ body {
 /* **************************** */
 
 .buttom-container {
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-content: center;
   gap: 1px;
+
   /* border: 2px solid; */
 }
 
@@ -264,16 +265,38 @@ background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95)
 }
 
 /* --------------------------- responsive ------------------------- */
-@media (max-width: 768px) {
+@media (min-width: 1400px) {
+
   body{
-    align-items: flex-start;
-    background-color: whitesmoke;
-  }
-  .card{
-    box-shadow: none;
-  }
-  .top-container{
-    flex-direction: column;
+    font-size: 18px;
+ 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 
+  .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+    border: 5px solid;
+    grid-gap: 20px;
+    height: 3%;
+max-width: 1400px;
+  background: var(--White, #fff);
+  }
+  .top-container{
+    align-items: center;
+    border-radius: 32px;
+    padding: 1.5rem;
+  }
+  /* **************************** */
+        /* BUTTOM PART */
+/* **************************** */
+  .buttom-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    /* border: 2px solid;  */
+  }
 }
