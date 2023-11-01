@@ -1,40 +1,97 @@
-# Frontend Mentor - Results summary component
-## Where to find everything
+# Frontend Mentor - Results summary component solution
 
-Build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+This is a solution to the [Results summary component challenge on Frontend Mentor]
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+## Table of contents
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Building your project
+## Overview
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### The challenge
 
-1. [GitHub]
-2. repository to public
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Users should be able to:
 
-## Deploying your project
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### Screenshot
 
-## Create a custom `README.md`
+![](./design/mobile-design.jpg)
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings.
+### Links
 
-## Sharing your solution
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-There are multiple places you can share your solution:
+## My process
 
-1. Share your solution page in the **#finished-projects**
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### Built with
 
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Styled Components](https://styled-components.com/) - For styles
 
-**Have fun building!** 🚀
+### What I learned
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<div class="top-container">
+      <h2>Your Result</h2>
+
+      <div class="circle" >
+        <p class="result-score"><span>76</span> of 100</p>
+      </div>
+      <div class="info">
+        <b>Great</b>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+```
+```css
+/*  pseudo-class in CSS allows you to select elements based on their position within a parent element. */
+.buttom-container .row:nth-child(2){
+  border-radius: 12px;
+  background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
+  }
+  .buttom-container .row:nth-child(2) b {
+    /* Your styles for the <b> element within the second .row */
+    color: var(--Red, #F55);
+  }
+```
+
+### Continued development
+
+i would like to continue focusing on in future projects. These could be concepts of adding action of the actual buttons in the project.
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+## Author
+
+- Website - [Giorgi Nareklishvili](https://portfolio-giorgi-nareklishvili.vercel.app)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- LinkedIn - [@gionare](https://www.linkedin.com/in/gionare/)
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
