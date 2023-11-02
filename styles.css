@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap");
 
-
-
 /* ## Colors
 ### Primary
 - Light red: hsl(0, 100%, 67%)
@@ -41,7 +39,7 @@
 
 body {
   background: var(--Very-Light-blue, #ecf2ff);
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +54,12 @@ body {
 }
 
 /* Parent container */
-.top-container {  
+.top-container {
   border-radius: 0px 0px 32px 32px;
-  background: var(--Gradient-1,linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%));
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
   /* 1 */
   box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
   /* width: 375px;
@@ -88,7 +89,11 @@ body {
   height: 140px;
   flex-shrink: 0;
   border-radius: 50%; /* This creates a circular shape */
-  background: linear-gradient(to bottom, var(--gradient-light-slate-blue-circle), var(--gradient-persian-blue-circle));
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-light-slate-blue-circle),
+    var(--gradient-persian-blue-circle)
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +109,7 @@ body {
   /* border: 1px solid; */
 }
 
-.result-score span{
+.result-score span {
   font-size: 72px;
   font-weight: 800;
   line-height: 72px;
@@ -112,8 +117,8 @@ body {
 }
 
 .in-circle p {
-  color: var(--Light-Blue, #CAC9FF);
-  font-feature-settings: 'clig' off, 'liga' off;
+  color: var(--Light-Blue, #cac9ff);
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Hanken Grotesk;
   font-size: 16px;
   font-style: normal;
@@ -140,7 +145,6 @@ body {
   font-weight: 700;
   line-height: normal;
   /* border: 1px solid; */
-  
 }
 
 .info p {
@@ -155,7 +159,7 @@ body {
   margin-bottom: 20px;
 }
 /* **************************** */
-        /* BUTTOM PART */
+/* BUTTOM PART */
 /* **************************** */
 
 .buttom-container {
@@ -168,15 +172,15 @@ body {
   /* border: 2px solid; */
 }
 
-.buttom-container h2{
-    color: var(--Dark-Navy, #303B59);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Hanken Grotesk;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-/* border: 1px solid; */
+.buttom-container h2 {
+  color: var(--Dark-Navy, #303b59);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Hanken Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* border: 1px solid; */
 }
 
 .row {
@@ -187,64 +191,99 @@ line-height: normal;
   align-content: center;
   align-items: center;
   padding: 10px;
-  padding: 0.4rem .5rem;
+  padding: 0.4rem 0.5rem;
   margin-top: 10px;
   /* border: 1px solid;  */
 }
-.row p{
+.row p {
   color: gray;
 }
-.row p strong{
-  color: var(--Dark-Navy, #303B59); 
+.row p strong {
+  color: var(--Dark-Navy, #303b59);
 }
 
-.badge{
+.badge {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  height: 56px; 
+  height: 56px;
   /* border: 1px solid; */
 }
 
 /*  pseudo-class in CSS allows you to select elements based on their position within a parent element. */
-.buttom-container .row:nth-child(2){
+.buttom-container .row:nth-child(2) {
   border-radius: 12px;
-  background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
-  }
-  .buttom-container .row:nth-child(2) b {
-    /* Your styles for the <b> element within the second .row */
-    color: var(--Red, #F55);
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+.buttom-container .row:nth-child(2) b {
+  /* Your styles for the <b> element within the second .row */
+  color: var(--Red, #f55);
 }
 
-.buttom-container .row:nth-child(3){
+.buttom-container .row:nth-child(3) {
   border-radius: 12px;
-background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);}
-  .buttom-container .row:nth-child(3) b {
-    /* Your styles for the <b> element within the second .row */
-    color: var(--Yellow, #FFB21E); 
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+.buttom-container .row:nth-child(3) b {
+  /* Your styles for the <b> element within the second .row */
+  color: var(--Yellow, #ffb21e);
 }
 
-.buttom-container .row:nth-child(4){
+.buttom-container .row:nth-child(4) {
   border-radius: 12px;
-background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);}
-  .buttom-container .row:nth-child(4) b {
-    /* Your styles for the <b> element within the second .row */
-    color: var(--Green, #00BB8F);
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+.buttom-container .row:nth-child(4) b {
+  /* Your styles for the <b> element within the second .row */
+  color: var(--Green, #00bb8f);
 }
 
-.buttom-container .row:nth-child(5){
+.buttom-container .row:nth-child(5) {
   border-radius: 12px;
-background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);}
-  .buttom-container .row:nth-child(5) b {
-    /* Your styles for the <b> element within the second .row */
-    color: var(--Blue, #1125D6); 
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+.buttom-container .row:nth-child(5) b {
+  /* Your styles for the <b> element within the second .row */
+  color: var(--Blue, #1125d6);
 }
 
-.continue-btn{
+.continue-btn {
   margin-top: auto;
   padding: 0.4rem;
   border-radius: 2rem;
-  background: var(--Dark-Navy, #303B59);
+  background: var(--Dark-Navy, #303b59);
   cursor: pointer;
   font-size: 1rem;
   width: 100%;
@@ -255,26 +294,27 @@ background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95)
   align-content: center;
   align-items: center; */
 }
-.continue-btn{
+.continue-btn {
   color: #fff;
 }
 
-.continue-btn:hover{
-  background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%)); 
+.continue-btn:hover {
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
 }
 
 /* --------------------------- responsive ------------------------- */
 @media (min-width: 1400px) {
-
-  body{
+  body {
     font-size: 18px;
- 
     justify-content: center;
     align-items: center;
     min-height: 100vh;
   }
 
-  .card{
+  .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
@@ -282,16 +322,17 @@ background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95)
     height: 3%;
     max-width: 1400px;
     background: var(--White, #fff);
+    border-radius: 32px 0 0 32px;
     /* border: 5px solid; */
   }
-  .top-container{
+  .top-container {
     align-items: center;
     border-radius: 32px;
     padding: 1.5rem;
   }
   /* **************************** */
-        /* BUTTOM PART */
-/* **************************** */
+  /* BUTTOM PART */
+  /* **************************** */
   .buttom-container {
     display: flex;
     flex-direction: column;
