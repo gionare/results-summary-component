@@ -4,7 +4,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Screenshot
 
-<img src="design/mobile-design.jpg" width="300")
+<img src="design/mobile-design.jpg" width="300">
 
 
 ## Table of contents
